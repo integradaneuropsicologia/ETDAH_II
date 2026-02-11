@@ -649,7 +649,7 @@ const obsAnswer = Array.from(obsNodes).map(el => el.value); // array de textos
       code         : CODE,
       source       : "professor",
       submitted_at : new Date().toISOString(),
-      questions    : "",
+      questions    : JSON.stringify(scoring.domains),
       categoria    : JSON.stringify(scoring.domains), // áreas, pontuações, classificações, resultados
       metrics      : ""
     };
